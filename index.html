@@ -4,6 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Resume Checker</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/logo.png" />
+<link rel="apple-touch-icon" href="/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -64,13 +67,9 @@
   header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:34px}
   .brand{display:flex;align-items:center;gap:13px}
   .brand .mark{
-    width:38px;height:38px;flex:0 0 auto;position:relative;
-    border:1px solid var(--line-2);border-radius:9px;
-    background:linear-gradient(150deg,rgba(53,224,255,.16),rgba(53,224,255,0));
-    box-shadow:0 0 18px rgba(53,224,255,.18),inset 0 0 12px rgba(53,224,255,.06);
-    display:grid;place-items:center;
+    height:40px;width:auto;max-width:180px;flex:0 0 auto;display:block;
+    border-radius:8px;filter:drop-shadow(0 0 12px rgba(53,224,255,.4));
   }
-  .brand .mark svg{width:20px;height:20px;display:block}
   .brand .name{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.16em;text-transform:uppercase}
   .brand .name b{color:var(--cyan)}
   .status{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:8px;white-space:nowrap}
@@ -235,15 +234,10 @@
 <div class="wrap">
   <header class="top">
     <div class="brand">
-      <span class="mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#35E0FF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
-          <path d="M13 3v5h5"/><path d="M9 13l2 2 4-4"/>
-        </svg>
-      </span>
+      <img class="mark" src="/logo.png" alt="Resume Checker logo" />
       <span class="name">Resume <b>Checker</b></span>
     </div>
-    <span class="status"><span class="dot"></span> System Online</span>
+    <span class="status"><span class="dot"></span> Built by Mitran</span>
   </header>
 
   <div class="hero">
@@ -355,7 +349,7 @@
     <button class="again" id="againBtn">&#8635; Check another</button>
   </section>
 
-  <footer class="foot">Powered by <b>Claude</b> &middot; your resume is analyzed, never stored</footer>
+  <footer class="foot">Built by <b>Mitran</b> &middot; Powered by Claude &middot; your resume is analyzed, never stored</footer>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
